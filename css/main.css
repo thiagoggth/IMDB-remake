@@ -1,0 +1,202 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  font-family: Montserrat;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #ccc;
+  padding: 20px;
+  background-image: url("../img/capa-madmax2.jpg");
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 99;
+}
+
+header::after {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 212, 255, 0) 75%
+  );
+  content: "";
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+header .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.menu-desktop ul {
+  padding-left: 0;
+  width: 350px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.menu-desktop li a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 13px;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-desktop li a:hover {
+  color: yellow;
+}
+
+.menu .user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu .user p {
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+}
+
+.menu .user-photo {
+  margin-right: 15px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.featured {
+  z-index: 2;
+}
+
+.featured h2 {
+  margin: 0;
+  font-weight: bold;
+  color: white;
+  font-size: 58px;
+  text-transform: uppercase;
+  line-height: 70px;
+}
+
+.featured p.genre {
+  margin: 0;
+}
+.featured p.genre a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.featured p.genre a + a {
+  margin-left: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.featured p.genre a:hover {
+  color: #e4bb23;
+}
+
+.trailher-button {
+  width: 100%;
+  max-width: 200px;
+  padding: 10px 0;
+  background: #e4bb23;
+  border-radius: 40px;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 30px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.trailher-button:hover {
+  filter: brightness(85%);
+}
+
+.trailher-button i {
+  font-size: 26px;
+  margin-left: 8px;
+}
+
+.featured p {
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+}
+
+.featured p.debut {
+  color: #bc9a1d;
+}
+
+/*style of footer*/
+
+footer {
+  padding: 20px 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-wrapper .social-links {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-wrapper .social-links a {
+  color: rgba(49, 49, 49, 0.7);
+  font-size: 24px;
+}
+
+.fa-twitter,
+.fa-facebook-official,
+.fa-instagram {
+  transition: all 0.2s ease-in-out;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-facebook-official:hover {
+  color: #3b5998;
+}
+
+.fa-instagram:hover {
+  color: #833AB4;
+}
